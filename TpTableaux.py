@@ -1,29 +1,18 @@
-#Délclaration
+# Déclaration 
 
-eleve1 = [12,14,16,18]
-eleve2 = [10,11,13,15]
-eleve3 = [17,19,20,18]
+eleve1 = [14, 7, 8, 19]
+eleve2 = [13, 9, 2, 10]
+eleve3 = [8, 9, 10, 18]
 
-notes = [eleve1,
-         eleve2,
+eleves = [eleve1, 
+         eleve2, 
          eleve3]
 
+# Déclaration
 
-# Instructions
 
-for i in notes:
-    
-    notesEleves = ""
-    moyenneEleves = 0
-    for j in (i) :
-        
-        moyenneEleves += j
-        if len(i) > i.index(j) + 1 :
-            notesEleves += (str(j) + ", ")
-        else :
-            notesEleves += str(j)
-
-moyenneEleves /= len(i)
-print (f"Notes de l'élève {notes.index(i) + 1} : {notesEleves}")
-print (f"Moyenne de  l'eleve {notes.index(i) + 1} : {moyenneEleves}")
-
+for i, eleve in enumerate(eleves):
+    notes = ""
+    moyenne += i  
+    for j, note in enumerate(eleve):
+        eleve
