@@ -13,9 +13,11 @@ eleves = [eleve1,
 for i, eleve in enumerate(eleves):
     notes = ""
     moyenne = 0
+    
     for j, note in enumerate(eleve):
         moyenne += note
         notes += str(note) + " "
+
     moyenne = moyenne / (j + 1)
     print(f"Eleve {i+1} : {notes} ({moyenne:.2f}/20)")
 
