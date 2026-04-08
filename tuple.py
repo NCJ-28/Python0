@@ -2,11 +2,11 @@
 mon_tuple = (10, 20, 30)
 
 #Traitement
-try: 
-    mon_tuple[2] = 40
+maListe = list(mon_tuple) 
 
-except TypeError:
-    print ("\U000026A0 Erreur : impossible de modifier un élément d'un tuple car il est immuable")
+maListe[1] = 15
 
-print(mon_tuple)
 
+mon_tuple = tuple(maListe)
+
+print(f"Ancien tuple : {mon_tuple}")
